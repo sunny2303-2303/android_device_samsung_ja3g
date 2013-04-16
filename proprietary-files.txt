@@ -1,0 +1,8 @@
+system/bin/gpsd
+system/lib/hw/gps.default.so
+system/lib/hw/camera.universal5410.so
+system/lib/hw/sensors.universal5410.so
+system/lib/libakm.so
+system/lib/libsec-ril.so
+system/usr/idc/Atmel_maXTouch_Touchscreen.idc
+system/usr/keylayout/Generic.kl

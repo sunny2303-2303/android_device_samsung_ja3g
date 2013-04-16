@@ -14,21 +14,10 @@
 # limitations under the License.
 #
 
-# This variable is set first, so it can be overridden
-TARGET_ARCH := arm
-TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := exynos5
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv7-a-neon
-ARCH_ARM_HAVE_TLS_REGISTER := true
-TARGET_BOOTLOADER_BOARD_NAME := ja3g
+LOCAL_PATH := $(call my-dir)
 
-# Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/ja3g/kernel
+ifeq ($(TARGET_DEVICE),ja3g)
 
-# assert
-TARGET_OTA_ASSERT_DEVICE := ja3g,i9500,GT-I9500
+include $(call all-makefiles-under,$(LOCAL_PATH))
 
-# inherit from the proprietary version
--include vendor/samsung/ja3g/BoardConfigVendor.mk
+endif
