@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/i9300
+LOCAL_PATH := device/samsung/ja3g
 
 # This device is xxhdpi.  However the platform doesn't
 # currently contain all of the bitmaps at xxhdpi density so
